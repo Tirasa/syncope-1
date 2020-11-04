@@ -410,6 +410,7 @@ under the License.
 
     <spring.version>5.1.19.RELEASE</spring.version>
     <spring-security.version>5.1.13.RELEASE</spring-security.version>
+    <spring-kafka.version>2.4.9.RELEASE</spring-kafka.version>    
 
     <openjpa.version>3.1.2</openjpa.version>
     <hikaricp.version>3.4.5</hikaricp.version>
@@ -965,6 +966,11 @@ under the License.
         <version>${spring.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-messaging</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-core</artifactId>
         <version>${spring-security.version}</version>
@@ -1003,7 +1009,13 @@ under the License.
         <artifactId>spring-security-config</artifactId>
         <version>${spring-security.version}</version>
       </dependency>
-    
+
+      <dependency>
+        <groupId>org.springframework.kafka</groupId>
+        <artifactId>spring-kafka</artifactId>
+        <version>${spring-kafka.version}</version>
+      </dependency>
+
       <dependency>
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjweaver</artifactId>
